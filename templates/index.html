@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>Diabetes Prediction System</h2>
+    <p class="subtitle">Enter your medical details to check diabetes risk</p>
+
+    <form action="/predict" method="post">
+
+        <input type="number" name="preg" placeholder="Pregnancies (0–20)" min="0" max="20" required>
+        <input type="number" name="glucose" placeholder="Glucose Level (50–200)" min="50" max="200" required>
+        <input type="number" name="bp" placeholder="Blood Pressure (40–140)" min="40" max="140" required>
+        <input type="number" name="skin" placeholder="Skin Thickness (0–100)" min="0" max="100" required>
+        <input type="number" name="insulin" placeholder="Insulin (0–900)" min="0" max="900" required>
+        <input type="number" name="bmi" placeholder="BMI (10–70)" min="10" max="70" step="0.1" required>
+        <input type="number" name="dpf" placeholder="DPF (0.0–2.5)" min="0" max="2.5" step="0.01" required>
+        <input type="number" name="age" placeholder="Age (1–120)" min="1" max="120" required>
+
+        <button type="submit">Predict Result</button>
+    </form>
+</div>
+
+</body>
+</html>
